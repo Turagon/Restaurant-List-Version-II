@@ -1,0 +1,82 @@
+<div class="addRestaurant">
+  <label for="new-name" class="new-restaurant"><i class="far fa-list-alt"></i>推薦餐廳</label>
+  <form action="/add/confirm" class="new" method="POST">
+    <div class="new-Name form-group row mt-2">
+      <label for="new-name" class="select-label col-form-label"><i class="fas fa-utensils"></i>餐廳名稱</label>
+      <div class="new-Name-sub input-column">
+        <input type="text" class="form-control" id="new-name" name="name-chinese" maxlength="50" aria-describedby="help" required>
+        <small id="help" class="form-text text-muted">長度不可超過50個字</small>
+      </div>
+    </div>
+    <div class="new-enName form-group row mt-2">
+      <label for="new-enname" class="select-label col-form-label"><i class="fab fa-amilia"></i>餐廳英文名稱</label>
+      <div class="new-enName-sub input-column">
+        <input type="text" class="form-control" id="new-enname" name="name-english" maxlength="50" aria-describedby="help">
+        <small id="help" class="form-text text-muted">長度不可超過50個字</small>
+      </div>
+    </div>
+    <div class="new-category form-group row mt-2">
+      <label class="col-form-label" for="category"><i class="far fa-folder"></i>分類</label>
+      <div class="new-category-sub input-column">
+        <input list="categories" class="form-control" name="category" id="category">
+        <datalist id="categories">
+          <option>台式料理</option>
+          <option>中式料理</option>
+          <option>日式料理</option>
+          <option>法式料理</option>
+          <option>義式料理</option>
+          <option>泰式料理</option>
+          <option>韓式料理</option>
+          <option>越南料理</option>
+          <option>印度料理</option>
+          <option>火鍋燒烤</option>
+          <option>咖啡簡餐</option>
+          <option>麵店小吃</option>
+        </datalist>
+      </div>
+    </div>
+    <div class="new-address form-group row mt-2">
+      <label for="new-address" class="select-label col-form-label"><i class="fas fa-map-marker-alt"></i>餐廳地址</label>
+      <div class="new-address-sub input-column">
+        <input type="text" class="form-control" id="new-address" name="address" maxlength="100" aria-describedby="help">
+        <small id="help" class="form-text text-muted">長度不可超過100個字</small>
+      </div>
+    </div>
+    <div class="new-phone form-group row mt-2">
+      <label for="new-phone" class="select-label col-form-label"><i class="fas fa-phone"></i>餐廳電話</label>
+      <div class="new-phone-sub input-column">
+        <input type="text" class="form-control" id="new-phone" name="phone" maxlength="10" aria-describedby="help">
+        <small id="help" class="form-text text-muted">長度不可超過10個字</small>
+      </div>
+    </div>
+    <div class="new-rating form-group row mt-2">
+      <label class="col-form-label" for="rating"><i class="fas fa-star-half-alt"></i>評分</label>
+      <div class="new-rating-sub input-column">
+        <select class="form-control" id="rating" name="rating">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+    </div>
+    <div class="new-description row mt-3">
+      <label class="col-form-label" for="new-description"><i class="far fa-comment-alt"></i>餐廳介紹</label>
+      <div class="new-description-sub input-column">
+        <textarea class="form-control" id="new-description" name="description" rows="3"></textarea>
+      </div>
+    </div>
+    <div class="new-photo form-group row mt-2">
+      <label for="photo-link" class="select-label col-form-label"><i class="far fa-images"></i>照片連結</label>
+      <div class="new-photo-sub input-column">
+        <input type="text" class="form-control" id="photo-link" name="photo" maxlength="10" aria-describedby="help">
+        <small id="help" class="form-text text-muted">請輸入照片連結網址</small>
+      </div>
+    </div>
+    <div class="add-btn mt-4 d-flex justify-content-center">
+      <button class="add" type="submit">新增</button>
+      <button class="back"><a href="/">回首頁</a></button>
+    </div>
+  </form>
+</div>
