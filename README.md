@@ -20,14 +20,14 @@
 2. 使用終端機介面進入該資料夾中
 3. 確認電腦上已經安裝好Node.js 以及Nodemon 並且安裝了Mongo DB
 4. 接下來的指令步驟
-   npm init -y
-   npm i express
-   npm i express-handlebars
-   npm i body-parser
-   npm i just-handlebars-helpers
-   npm i mongoose
-5. 安裝完成後 執行nodemon app.js
-6. 網頁的預設位置是localhost:3000
+   npm init -y  
+   npm i express  
+   npm i express-handlebars  
+   npm i body-parser  
+   npm i just-handlebars-helpers  
+   npm i mongoose  
+5. 安裝完成後 執行nodemon app.js  
+6. 網頁的預設位置是localhost:3000  
 
 ###撰寫人
 Rex
