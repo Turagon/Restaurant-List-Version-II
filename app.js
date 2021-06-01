@@ -123,9 +123,14 @@ app.post('/details/:id', (req, res) => {
     .catch(error => console.error(error))
 })
 
-
+app.post('/delete/:id', (req, res) => {
+  const id = req.params.id
+  return Restaurant.findById(id)
+    .then(restaurant => restaurant.remove())
+    .then(() => res.redirect('/'))
+    .catch(error => console.error(error))
+})
 
 app.listen(port, () => {
   console.log('server on')
 })
-

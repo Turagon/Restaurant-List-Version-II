@@ -146,7 +146,7 @@ button.add-new a {
 }
 
 .detail-info button {
-  width: 45%;
+  width: 30%;
   border: none;
   background-color: navy;
   text-align: center;
@@ -157,6 +157,18 @@ button.add-new a {
   display: block;
   width: 100%;
   text-decoration: none;
+  color: aliceblue;
+  font-weight: bolder;
+}
+
+.form-in-detail {
+  width: 30%;
+}
+
+.detail-delete {
+  display: inline-block !important;
+  width: 100% !important;
+  background-color: red !important;
   color: aliceblue;
   font-weight: bolder;
 }
