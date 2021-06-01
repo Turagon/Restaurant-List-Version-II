@@ -1,0 +1,20 @@
+<div class="add-confirm">
+  <h5>您提供的餐廳似乎有重複 請幫我們確認一下</h5>
+  <div class="add-sub-container">
+    <a class="add-confirm-btn" href="/add/confirm">沒有重複 送出</a>
+    <a class="add-deny" href="/">重複了 回首頁</a>
+  </div>
+  <div class="cards row">
+    {{#each restaurants}}
+    <a href="/details/{{this._id}}">
+      <img src="{{this.image}}" alt="{{this.name}}" class="card-img">
+      <span>{{this.name}}</span><br>
+      <span><i class="fas fa-utensils"></i>{{this.category}}</span>
+      <div class="rating d-flex justify-content-around align-items-center">
+        <span>{{this.rating}}</span>
+        <i class="far fa-thumbs-up"></i>
+      </div>
+    </a>
+    {{/each}}
+  </div>
+</div>

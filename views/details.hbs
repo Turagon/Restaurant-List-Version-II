@@ -14,6 +14,9 @@
     <span class="location">地址 : {{details.location}}</span>
     <span class="phone">電話 : {{details.phone}}</span>
     <p class="description">介紹 : {{details.description}}</p>
-    <button class="detail-btn"><a href="/" class="title">回首頁</a></button>
+    <div class="d-flex justify-content-between">
+      <button class="detail-btn"><a href="/" class="title">回首頁</a></button>
+      <button class="detail-btn"><a href="/edit/{{id}}" class="title">編輯</a></button>
+    </div>
   </div>
 </div>

@@ -21,6 +21,7 @@ db.once('open', () => {
       name_en: i.name_en,
       category: i.category,
       image: i.image,
+      location: i.location,
       phone: i.phone,
       rating: i.rating,
       description: i.description

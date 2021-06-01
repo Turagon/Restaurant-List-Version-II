@@ -1,26 +1,26 @@
 <div class="addRestaurant">
-  <label for="new-name" class="new-restaurant"><i class="far fa-list-alt"></i>推薦餐廳</label>
-  <form action="/add/confirm" class="new" method="POST">
+  <label for="new-name" class="new-restaurant"><i class="far fa-list-alt"></i>更新資料</label>
+  <form action="/details/{{id}}" class=" new edit" method="POST">
     <div class="new-Name form-group row mt-2">
       <label for="new-name" class="select-label col-form-label"><i class="fas fa-utensils"></i>餐廳名稱</label>
       <div class="new-Name-sub input-column">
         <input type="text" class="form-control" id="new-name" name="name" maxlength="20" aria-describedby="help"
-          placeholder="必填 長度不可超過20個字" required>
+        placeholder="必填 長度不可超過20個字" value="{{restaurant.name}}" required>
         <small id="help" class="invalid-feedback">此欄位不可以是空白</small>
       </div>
     </div>
     <div class="new-enName form-group row mt-2">
       <label for="new-enname" class="select-label col-form-label"><i class="fab fa-amilia"></i>餐廳英文名稱</label>
       <div class="new-enName-sub input-column">
-        <input type="text" class="form-control" id="new-enname" name="name_en" maxlength="30"
-          aria-describedby="help" placeholder="長度不可超過30個字">
+        <input type="text" class="form-control" id="new-enname" name="name_en" maxlength="30" aria-describedby="help"
+        placeholder="長度不可超過30個字" value="{{restaurant.name_en}}">
       </div>
     </div>
     <div class="new-category form-group row mt-2">
       <label class="col-form-label" for="category"><i class="far fa-folder"></i>分類</label>
       <div class="new-category-sub input-column">
         <input list="categories" class="form-control" name="category" id="category" placeholder="必填..若選項沒有 可自行輸入"
-          required>
+        value="{{restaurant.category}}"  required>
         <small id="help" class="invalid-feedback">此欄位不可以是空白</small>
         <datalist id="categories">
           <option>台式料理</option>
@@ -45,7 +45,7 @@
       <label for="new-address" class="select-label col-form-label"><i class="fas fa-map-marker-alt"></i>餐廳地址</label>
       <div class="new-address-sub input-column">
         <input type="text" class="form-control" id="new-address" name="location" maxlength="100" aria-describedby="help"
-          placeholder="必填 長度不可超過100個字" required>
+        placeholder="必填 長度不可超過100個字" value="{{restaurant.location}}" required>
         <small id="help" class="invalid-feedback">此欄位不可以是空白</small>
       </div>
     </div>
@@ -53,7 +53,7 @@
       <label for="new-phone" class="select-label col-form-label"><i class="fas fa-phone"></i>餐廳電話</label>
       <div class="new-phone-sub input-column">
         <input type="text" class="form-control" id="new-phone" name="phone" maxlength="10" aria-describedby="help"
-          placeholder="長度不可超過10個字">
+        placeholder="長度不可超過10個字" value="{{restaurant.phone}}">
       </div>
     </div>
     <div class="new-rating form-group row mt-2">
@@ -71,19 +71,19 @@
     <div class="new-description row mt-3">
       <label class="col-form-label" for="new-description"><i class="far fa-comment-alt"></i>餐廳介紹</label>
       <div class="new-description-sub input-column">
-        <textarea class="form-control" id="new-description" name="description" maxlength="500" rows="3"
-          placeholder="長度不可超過500個字"></textarea>
+        <input class="form-control" id="new-description" name="description" maxlength="500"
+        placeholder="長度不可超過500個字" value="{{restaurant.description}}">
       </div>
     </div>
     <div class="new-photo form-group row mt-2">
       <label for="photo-link" class="select-label col-form-label"><i class="far fa-images"></i>照片連結</label>
       <div class="new-photo-sub input-column">
         <input type="text" class="form-control" id="photo-link" name="image" maxlength="120" aria-describedby="help"
-          placeholder="請輸入照片連結網址">
+        placeholder="請輸入照片連結網址" value="{{restaurant.image}}">
       </div>
     </div>
     <div class="add-btn mt-4 d-flex justify-content-center">
-      <button class="add submit" type="submit">新增</button>
+      <button class="add submit" type="submit">送出</button>
       <button class="back"><a href="/">回首頁</a></button>
     </div>
   </form>
