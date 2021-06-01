@@ -29,6 +29,6 @@
 5. 安裝完成後 執行nodemon app.js  
 6. 網頁的預設位置是localhost:3000  
 
-###撰寫人###
-Rex
+###撰寫人###  
+Rex  
 email address : rexlin6245@gmail.com
