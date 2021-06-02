@@ -71,8 +71,10 @@
     <div class="new-description row mt-3">
       <label class="col-form-label" for="new-description"><i class="far fa-comment-alt"></i>餐廳介紹</label>
       <div class="new-description-sub input-column">
-        <input class="form-control" id="new-description" name="description" maxlength="500"
-        placeholder="長度不可超過500個字" value="{{restaurant.description}}">
+        {{!-- <input class="form-control" id="new-description" name="description" maxlength="500"
+        placeholder="長度不可超過500個字" value=""> --}}
+        <textarea class="form-control" id="new-description" name="description" maxlength="500" rows="3"
+          placeholder="長度不可超過500個字">{{restaurant.description}}</textarea>
       </div>
     </div>
     <div class="new-photo form-group row mt-2">
