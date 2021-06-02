@@ -25,7 +25,8 @@
    npm i express-handlebars  
    npm i body-parser  
    npm i just-handlebars-helpers  
-   npm i mongoose  
+   npm i mongoose   
+   完成後 先進入/models/seeds 由終端機執行nodemon restaurantseeders.js 先預載入demo資料
 5. 安裝完成後 執行nodemon app.js  
 6. 網頁的預設位置是localhost:3000  
 
